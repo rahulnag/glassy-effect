@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+	<style>
+		p{color: white}
+		body{font-family: Arial}
+	</style>
+</head>
+<body>
+	<div class="float">
+	
+	<input class="my-float" type="color" value="#FFF222" style="height:40px; width:40px; border-radius: 40px;">
+	<p style="font-size: 0.5em; font-family: arial; color:#FFF222 ">Choose Background</p>
+	</div>
+	
+    <div class="container">
+        <div class="card glassType1" id="one">
+            <h3>THIS IS CARD 1</h3>
+			<br>
+			<p>&lt;div class= "glassType1" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType2">
+            <h3>THIS IS CARD 2</h3>
+			<br>
+			<p>&lt;div class= "glassType2" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType3">
+            <h3>THIS IS CARD 3</h3>
+			<br>
+			<p>&lt;div class= "glassType3" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType4">
+            <h3>THIS IS CARD 4 </h3>
+			<br>
+			<p>&lt;div class= "glassType4" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType5">
+            <h3>THIS IS CARD 5</h3>
+			<br>
+			<p>&lt;div class= "glassType5" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType6">
+            <h3>THIS IS CARD 6</h3>
+			<br>
+			<p>&lt;div class= "glassType6" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType7">
+            <h3>THIS IS CARD 7</h3>
+			<br>
+			<p>&lt;div class= "glassType7" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType8">
+            <h3>THIS IS CARD 8</h3>
+			<br>
+			<p>&lt;div class= "glassType8" &gt;  &lt;/div&gt;</p>
+        </div>
+
+        <div class="card glassType9">
+            <h3>THIS IS CARD 9</h3>
+			<br>
+			<p>&lt;div class= "glassType9" &gt;  &lt;/div&gt;</p>
+        </div>
+
+    </div>
+    <script src="hover.js"></script>
+	<script>
+		document.querySelector("input").addEventListener("input", function() {
+			document.body.style.background = this.value;
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/glassyeffect@1.1.0/index.js"></script>
+   </body>
+</html>
