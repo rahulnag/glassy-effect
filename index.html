@@ -19,67 +19,91 @@
 	</div>
 	
     <div class="container">
-        <div class="card glassType1" id="one">
+        <div class="card glassType1" id="one" onclick= 'copyToClipboard("glassType1")'>
             <h3>THIS IS CARD 1</h3>
 			<br>
 			<p>&lt;div class= "glassType1" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType2">
+        <div class="card glassType2" onclick= 'copyToClipboard("glassType2")'>
             <h3>THIS IS CARD 2</h3>
 			<br>
 			<p>&lt;div class= "glassType2" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType3">
+        <div class="card glassType3" onclick= 'copyToClipboard("glassType3")'>
             <h3>THIS IS CARD 3</h3>
 			<br>
 			<p>&lt;div class= "glassType3" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType4">
+        <div class="card glassType4" onclick= 'copyToClipboard("glassType4")'>
             <h3>THIS IS CARD 4 </h3>
 			<br>
 			<p>&lt;div class= "glassType4" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType5">
+        <div class="card glassType5" onclick= 'copyToClipboard("glassType5")'>
             <h3>THIS IS CARD 5</h3>
 			<br>
 			<p>&lt;div class= "glassType5" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType6">
+        <div class="card glassType6" onclick= 'copyToClipboard("glassTyp6")'>
             <h3>THIS IS CARD 6</h3>
 			<br>
 			<p>&lt;div class= "glassType6" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType7">
+        <div class="card glassType7" onclick= 'copyToClipboard("glassType7")'>
             <h3>THIS IS CARD 7</h3>
 			<br>
 			<p>&lt;div class= "glassType7" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType8">
+        <div class="card glassType8" onclick= 'copyToClipboard("glassType8")'>
             <h3>THIS IS CARD 8</h3>
 			<br>
 			<p>&lt;div class= "glassType8" &gt;  &lt;/div&gt;</p>
         </div>
 
-        <div class="card glassType9">
+        <div class="card glassType9" onclick= 'copyToClipboard("glassType9")'>
             <h3>THIS IS CARD 9</h3>
 			<br>
 			<p>&lt;div class= "glassType9" &gt;  &lt;/div&gt;</p>
         </div>
+		
+        <div class="card glassType10" onclick= 'copyToClipboard("glassType10")'>
+            <h3>THIS IS CARD 10</h3>
+			<br>
+			<p>&lt;div class= "glassType10" &gt;  &lt;/div&gt;</p>
+        </div>
 
     </div>
+
+
+    <div id="snackbar">Class name copied</div>
+
     <script src="hover.js"></script>
 	<script>
 		document.querySelector("input").addEventListener("input", function() {
 			document.body.style.background = this.value;
 		});
 	</script>
-	<script src="https://cdn.jsdelivr.net/npm/glassyeffect@1.1.0/index.js"></script>
-   </body>
+    <script>
+        function copyToClipboard(data){
+            navigator.clipboard.writeText(data)
+        }
+    </script>
+	<script src="https://cdn.jsdelivr.net/npm/glassyeffect@1.1.4/index.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>    
+</body>
 </html>
